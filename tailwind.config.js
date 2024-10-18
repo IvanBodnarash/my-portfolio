@@ -10,6 +10,13 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "portfolio-color-1": "#352F44",
+        "portfolio-color-2": "#5C5470",
+        "portfolio-color-3": "#B9B4C7",
+        "portfolio-color-4": "#FAF0E6",
+        "portfolio-color-5": "#D8C9BB",
+        "portfolio-color-6": "#ECDFD1",
+        "portfolio-color-7": "#E9E2DC",
       },
     },
   },

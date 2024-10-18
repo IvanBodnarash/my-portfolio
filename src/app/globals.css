@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #352F44;
+  --foreground: #FAF0E6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +16,21 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #352F44, #5C5470);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.button:hover {
+  transform: translate(-0.10rem, -0.10rem);
+  box-shadow: 0.30rem 0.30rem #FAF0E6;
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
 }
