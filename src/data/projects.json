@@ -1,0 +1,47 @@
+[
+  {
+    "title": "The Recipe Compass",
+    "description": "A recipe management system built using HTML, CSS, JavaScript, Firebase for the backend, and the Unsplash API for image integration. The app allows users to post their own recipes, comment on other users' recipes, and create personal accounts.",
+    "techStack": ["HTML", "CSS", "JS", "Firebase", "Unsplash API", "Vercel"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/IvanBodnarash"
+    }
+  },
+  {
+    "title": "Buidl & Borrow",
+    "description": "A decentralized app (dApp) built on Radix during a hackathon. It uses Scrypto for smart contracts, JavaScript for the frontend, Firebase for data, and Tailwind CSS for styling. The dApp enables users to lend and borrow assets in a decentralized manner, providing a secure and transparent financial ecosystem.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JS",
+      "Scrypto",
+      "Tailwind",
+      "Vercel",
+      "Vite",
+      "Firebase"
+    ],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/IvanBodnarash"
+    }
+  },
+  {
+    "title": "Pokemon Search App",
+    "description": "I built this project to learn TypeScript. The app allows users to search for Pokémon, filter by type, and sort the list, providing a hands-on way to practice TypeScript with Next.js.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/IvanBodnarash"
+    }
+  },
+  {
+    "title": "4th project",
+    "description": "Esse quis nulla ullamco enim. Do nulla officia magna pariatur ipsum cillum incididunt velit irure proident adipisicing. Ullamco ea pariatur eu labore aliqua incididunt nisi. Commodo Lorem dolore mollit do.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/IvanBodnarash"
+    }
+  }
+]

@@ -17,6 +17,7 @@ module.exports = {
         "portfolio-color-5": "#D8C9BB",
         "portfolio-color-6": "#ECDFD1",
         "portfolio-color-7": "#E9E2DC",
+        "portfolio-color-8": "#D8CCBF",
       },
     },
   },
