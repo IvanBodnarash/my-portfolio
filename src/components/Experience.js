@@ -56,9 +56,14 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="h-screen flex flex-col items-center space-y-8"
+      className="lg:h-screen h-full flex flex-col items-center space-y-8 pt-28"
+      data-aos="fade-up"
     >
-      <div className="flex flex-row items-center space-x-6 w-full">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="flex flex-row items-center space-x-6 w-full"
+      >
         <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">
           Experience
         </h1>
@@ -67,7 +72,11 @@ export default function Experience() {
 
       <div className="w-full">
         <div className="flex flex-col lg:flex-row rounded-lg text-portfolio-color-4 lg:space-x-16 space-x-0 lg:space-y-0 space-y-8">
-          <div className="flex lg:flex-col flex-wrap">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="flex lg:flex-col flex-wrap"
+          >
             {tabs.map((tab) => (
               <div key={tab} className="relative flex items-center">
                 <div
@@ -91,12 +100,22 @@ export default function Experience() {
             ))}
           </div>
 
-          <div className="lg:w-2/3 w-5/6 space-y-8">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="lg:w-2/3 w-5/6 space-y-8"
+          >
             {tabContent[activeTab].map((item, index) => (
               <div key={index} className="space-y-6">
-                <h2 className="text-xl font-bold w-2/4">{item.title}</h2>
-                <p className="mt-2 text-portfolio-color-6 italic">{item.date}</p>
-                <p className="text-md text-portfolio-color-6 mt-4">{item.description}</p>
+                <h2 className="text-xl font-bold md:w-2/4 w-full">
+                  {item.title}
+                </h2>
+                <p className="mt-2 text-portfolio-color-6 italic">
+                  {item.date}
+                </p>
+                <p className="text-md text-portfolio-color-6 mt-4">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>

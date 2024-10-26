@@ -4,8 +4,8 @@
     "description": "A recipe management system built using HTML, CSS, JavaScript, Firebase for the backend, and the Unsplash API for image integration. The app allows users to post their own recipes, comment on other users' recipes, and create personal accounts.",
     "techStack": ["HTML", "CSS", "JS", "Firebase", "Unsplash API", "Vercel"],
     "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/IvanBodnarash"
+      "live": "https://the-recipe-compass.web.app",
+      "github": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS"
     }
   },
   {
@@ -22,8 +22,8 @@
       "Firebase"
     ],
     "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/IvanBodnarash"
+      "live": "https://buidl-n-borrow-dapp.vercel.app",
+      "github": "https://github.com/IvanBodnarash/buidl-n-borrow-dapp"
     }
   },
   {

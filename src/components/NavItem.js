@@ -1,7 +1,10 @@
 import Link from "next/link";
-const NavItem = ({ href, children }) => (
+const NavItem = ({ href, children, ...props }) => (
   <Link href={href}>
-    <span className="hover:text-portfolio-color-5 transition-all duration-400">
+    <span
+      {...props}
+      className="hover:text-portfolio-color-5 transition-all duration-400"
+    >
       {children}
     </span>
   </Link>

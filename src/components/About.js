@@ -1,3 +1,9 @@
+"use client";
+import { useEffect } from "react";
+import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import myPhoto from "@/img/MyPhoto.png";
 const ListItem = ({ skill }) => (
   <li className="relative pl-4 before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-0 before:h-0 before:border-l-[5px] before:border-t-[5px] before:border-b-[5px] before:border-solid before:border-l-portfolio-color-6 before:border-t-transparent before:border-b-transparent">
     {skill}
@@ -5,18 +11,34 @@ const ListItem = ({ skill }) => (
 );
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
-    <div id="about" className="lg:h-screen h-full flex justify-center items-center">
-      <div className="space-y-8">
-        <div className="flex flex-row items-center space-x-6 lg:w-3/5 w-full">
+    <div
+      id="about"
+      className="lg:h-screen h-full flex justify-center items-center"
+      data-aos="fade-up"
+    >
+      <div className="space-y-8 lg:mt-0 mt-32">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="flex flex-row items-center space-x-6 lg:w-3/5 w-full"
+        >
           <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">
             About Me
           </h1>
-          <div className="h-[1px] lg:w-[60%] w-[50%] bg-portfolio-color-4"></div>
+          <div className="relative h-[1px] lg:w-[60%] w-[50%] bg-portfolio-color-4"></div>
         </div>
 
         <div className="flex lg:flex-row sm:flex-col flex-col lg:items-start items-center lg:space-y-0 space-y-16 lg:space-x-16 space-x-0">
-          <div className="lg:text-md text-sm text-portfolio-color-6 space-y-6 lg:w-full">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="lg:text-md text-sm text-portfolio-color-6 space-y-6 lg:w-full"
+          >
             <p>
               Hello! My name is Ivan, and I’m a self-taught web development
               enthusiast with a strong passion for building websites. My journey
@@ -55,7 +77,19 @@ export default function About() {
             </div>
           </div>
 
-          <div className="button-shadow cursor-pointer transition-all duration-300 ease-in-out bg-portfolio-color-4 lg:w-2/5 md:w-[250px] w-[200px] lg:h-[330px] h-[200px] rounded-lg"></div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="button-shadow relative cursor-pointer transition-all duration-300 ease-in-out bg-portfolio-color-4 lg:w-2/5 md:w-[250px] sm:w-[280px] w-full lg:h-[380px] h-[280px] rounded-lg"
+          >
+            <Image
+              src={myPhoto}
+              alt="My photo"
+              className="object-top object-cover w-full h-full rounded-lg"
+              fill
+            />
+            <div className="absolute inset-0 bg-portfolio-color-1 border-2 border-transparent bg-opacity-40 rounded-lg transition-all duration-300 ease-in-out hover:bg-opacity-0 hover:border-portfolio-color-5"></div>
+          </div>
         </div>
       </div>
     </div>

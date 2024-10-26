@@ -15,6 +15,8 @@ export default function Projects() {
   useEffect(() => {
     Aos.init({
       duration: 500,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
@@ -35,17 +37,22 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="h-full flex flex-col items-center justify-center"
+      className="h-full flex flex-col items-center justify-center pt-28"
+      data-aos="fade-up"
     >
       <div className="space-y-8">
-        <div className="flex flex-row items-center space-x-6 w-full">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="flex flex-row items-center space-x-6 w-full"
+        >
           <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">
             Projects
           </h1>
           <div className="h-[1px] lg:w-full md:w-2/5 w-1/2 bg-portfolio-color-4"></div>
         </div>
 
-        <div className="space-y-16">
+        <div data-aos="fade-up" data-aos-delay="200" className="space-y-16">
           {projectsData.slice(0, openedProjectsCount).map((project, index) => (
             <div
               key={index}

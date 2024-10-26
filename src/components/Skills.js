@@ -1,3 +1,7 @@
+"use client";
+import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   SiHtml5,
   SiCss3,
@@ -16,6 +20,7 @@ import {
   SiVite,
   SiWordpress,
 } from "react-icons/si";
+
 
 const skills = [
   { name: "HTML5", icon: SiHtml5 },
@@ -36,8 +41,8 @@ const skills = [
   { name: "Heroku", icon: SiHeroku },
 ];
 
-const SkillItem = ({ Icon, name }) => (
-  <div className="flex flex-col items-center">
+const SkillItem = ({ Icon, name, delay }) => (
+  <div data-aos="fade-up" data-aos-delay={delay} className="flex flex-col items-center">
     <div className="lg:h-28 lg:w-28 md:h-24 md:w-24 sm:h-20 sm:w-20 p-4 border-2 border-portfolio-color-4 border-opacity-50 rounded-lg hover:cursor-pointer button-shadow transition-all duration-300 ease-in-out">
       <Icon className="lg:text-7xl md:text-6xl text-5xl text-portfolio-color-4" />
     </div>
@@ -46,9 +51,17 @@ const SkillItem = ({ Icon, name }) => (
 );
 
 export default function Skills() {
+  useEffect(() => {
+    Aos.init({
+      duration: 300,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
-    <div id="skills" className="h-screen flex items-center">
-      <div className="space-y-8">
+    <div data-aos="fade-up" id="skills" className="lg:h-screen h-full flex items-center">
+      <div className="space-y-8 lg:mt-0 mt-32">
         <div className="flex flex-row items-center space-x-6 lg:w-3/5 w-full">
           <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">
             Skills
@@ -67,7 +80,7 @@ export default function Skills() {
 
         <div className="grid xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-6 sm:grid-cols-4 grid-cols-3 md:gap-8 gap-2">
           {skills.map((skill, index) => (
-            <SkillItem key={index} Icon={skill.icon} name={skill.name} />
+            <SkillItem key={index} Icon={skill.icon} name={skill.name} delay={index * 100} />
           ))}
         </div>
       </div>

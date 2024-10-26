@@ -3,7 +3,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiMail } from "react-icons/fi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import NavItem from "./NavItem";
+
+const menuItems = [
+  { href: "#about", label: "About Me" },
+  { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#contact", label: "Contact" },
+];
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -31,6 +41,10 @@ export default function Header() {
     }
   }, [lastScrollY]);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   const closeMobileMenu = () => {
     setIsOpenMobileMenu(false);
   };
@@ -42,7 +56,7 @@ export default function Header() {
       } ${lastScrollY ? "shadow-lg" : "shadow-none"}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-[90px]">
-        <div className="flex justify-center items-center">
+        <div data-aos="fade-right" className="flex justify-center items-center">
           <Link href="/">
             <div className="button-shadow flex items-center justify-center text-2xl text-portfolio-color-4 transform rotate-45 font-bold w-12 h-12 border-4 border-portfolio-color-4 transition-all duration-300 ease-in-out group-hover:rotate-0">
               <p className="-rotate-45 transition-all duration-300 ease-in-out hover:rotate-0 p-4">
@@ -53,15 +67,24 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-8 text-portfolio-color-4 font-light items-center">
-          <NavItem href="#about">About Me</NavItem>
-          <NavItem href="#projects">Projects</NavItem>
-          <NavItem href="#skills">Skills</NavItem>
-          <NavItem href="#experience">Experience</NavItem>
-          <NavItem href="#contact">Contact</NavItem>
-          <Link href="#mailme">
-            <FiMail className="text-2xl hover:text-portfolio-color-5 transition-all duration-400" />
-          </Link>
-          <div className="hidden md:block">
+          {menuItems.map((item, index) => (
+            <NavItem
+              key={item.label}
+              href={item.href}
+              data-aos="fade-down"
+              data-aos-delay={index * 100}
+            >
+              {item.label}
+            </NavItem>
+          ))}
+
+          <div data-aos="fade-down" data-aos-delay={menuItems.length * 100}>
+            <Link href="mailto:ivan.bodnarash.dev@gmail.com">
+              <FiMail className="text-2xl hover:text-portfolio-color-5 transition-all duration-400" />
+            </Link>
+          </div>
+
+          <div className="hidden md:block" data-aos="fade-down" data-aos-delay={(menuItems.length + 1) * 100}>
             <a
               href="static/resume.pdf"
               target="_blank"
@@ -94,15 +117,27 @@ export default function Header() {
 
       <div
         className={`top-0 right-0 ${
-          isOpenMobileMenu ? "h-full transition-all duration-500 ease-in-out" : "translate-x-full h-4"
+          isOpenMobileMenu
+            ? "h-full transition-all duration-500 ease-in-out"
+            : "translate-x-full h-4"
         } transform transition-transform duration-500 ease-in-out md:hidden z-40`}
       >
         <nav className="flex flex-col space-y-8 p-4 h-full backdrop-blur-lg text-portfolio-color-4 font-light items-center">
-          <NavItem href="#about" onClick={closeMobileMenu}>About Me</NavItem>
-          <NavItem href="#projects" onClick={closeMobileMenu}>Projects</NavItem>
-          <NavItem href="#skills" onClick={closeMobileMenu}>Skills</NavItem>
-          <NavItem href="#experience" onClick={closeMobileMenu}>Experience</NavItem>
-          <NavItem href="#contact" onClick={closeMobileMenu}>Contact</NavItem>
+          <NavItem href="#about" onClick={closeMobileMenu}>
+            About Me
+          </NavItem>
+          <NavItem href="#projects" onClick={closeMobileMenu}>
+            Projects
+          </NavItem>
+          <NavItem href="#skills" onClick={closeMobileMenu}>
+            Skills
+          </NavItem>
+          <NavItem href="#experience" onClick={closeMobileMenu}>
+            Experience
+          </NavItem>
+          <NavItem href="#contact" onClick={closeMobileMenu}>
+            Contact
+          </NavItem>
           <Link href="#mailme" onClick={closeMobileMenu}>
             <FiMail className="text-2xl hover:text-portfolio-color-5 transition-all duration-400" />
           </Link>
