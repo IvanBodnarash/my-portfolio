@@ -57,9 +57,15 @@ body {
   box-shadow: 0.3rem 0.3rem #faf0e6;
 }
 
-.button-shadow:active {
+.button-shadow:active,
+.button-dark-shadow:active {
   transform: translate(0);
   box-shadow: none;
+}
+
+.button-dark-shadow:hover {
+  transform: translate(-0.1rem, -0.1rem);
+  box-shadow: 0.3rem 0.3rem #282333;
 }
 
 .glow-text {

@@ -1,12 +1,13 @@
 [
   {
     "title": "The Recipe Compass",
-    "description": "A recipe management system built using HTML, CSS, JavaScript, Firebase for the backend, and the Unsplash API for image integration. The app allows users to post their own recipes, comment on other users' recipes, and create personal accounts.",
-    "techStack": ["HTML", "CSS", "JS", "Firebase", "Unsplash API", "Vercel"],
+    "description": "A recipe management system built using HTML, CSS, JavaScript, Firebase for the backend, and the Unsplash API for image integration. The app allows users to post their own recipes, comment on other users recipes, and create personal accounts.",
+    "techStack": ["HTML", "CSS", "JS", "Firebase", "Unsplash API"],
     "links": {
       "live": "https://the-recipe-compass.web.app",
       "github": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS"
-    }
+    },
+    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
   },
   {
     "title": "Buidl & Borrow",
@@ -24,7 +25,8 @@
     "links": {
       "live": "https://buidl-n-borrow-dapp.vercel.app",
       "github": "https://github.com/IvanBodnarash/buidl-n-borrow-dapp"
-    }
+    },
+    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
   },
   {
     "title": "Pokemon Search App",
@@ -33,7 +35,8 @@
     "links": {
       "live": "https://example.com",
       "github": "https://github.com/IvanBodnarash"
-    }
+    },
+    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
   },
   {
     "title": "4th project",
@@ -42,6 +45,7 @@
     "links": {
       "live": "https://example.com",
       "github": "https://github.com/IvanBodnarash"
-    }
+    },
+    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
   }
 ]
