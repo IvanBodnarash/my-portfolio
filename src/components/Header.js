@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { FiMail } from "react-icons/fi";
 import AOS from "aos";
@@ -20,7 +20,7 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
         setIsVisible(false);
@@ -29,7 +29,7 @@ export default function Header() {
       }
       setLastScrollY(window.scrollY);
     }
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -39,7 +39,7 @@ export default function Header() {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [lastScrollY]);
+  }, [lastScrollY, handleScroll]);
 
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });

@@ -26,26 +26,26 @@
       "live": "https://buidl-n-borrow-dapp.vercel.app",
       "github": "https://github.com/IvanBodnarash/buidl-n-borrow-dapp"
     },
-    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
+    "image": "https://github.com/IvanBodnarash/buidl-n-borrow-dapp/blob/main/client/images/buidl-n-borrow-screenshot.png?raw=true"
   },
   {
     "title": "Pokemon Search App",
     "description": "I built this project to learn TypeScript. The app allows users to search for Pokémon, filter by type, and sort the list, providing a hands-on way to practice TypeScript with Next.js.",
     "techStack": ["Next.js", "TypeScript", "Tailwind", "Vercel"],
     "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/IvanBodnarash"
+      "live": "https://pokemon-search-ts.vercel.app",
+      "github": "https://github.com/IvanBodnarash/pokemon-search-ts"
     },
-    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
+    "image": "https://github.com/IvanBodnarash/pokemon-search-ts/blob/master/public/images/pokemon-search-ts-screenshot.png?raw=true"
   },
   {
-    "title": "4th project",
-    "description": "Esse quis nulla ullamco enim. Do nulla officia magna pariatur ipsum cillum incididunt velit irure proident adipisicing. Ullamco ea pariatur eu labore aliqua incididunt nisi. Commodo Lorem dolore mollit do.",
-    "techStack": ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+    "title": "Parallax Magical Forest",
+    "description": "Developed a visually engaging project featuring a parallax effect and smooth scroll control, implemented using the GSAP library. Leveraged HTML, CSS, and JavaScript to create a seamless, interactive user experience.",
+    "techStack": ["HTML", "CSS", "JS", "Gsap"],
     "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/IvanBodnarash"
+      "live": "https://ivanbodnarash.github.io/ParallaxFX",
+      "github": "https://github.com/IvanBodnarash/ParallaxFX"
     },
-    "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
+    "image": "https://github.com/IvanBodnarash/ParallaxFX/blob/main/img/magic-forest-screenshot.png?raw=true"
   }
 ]

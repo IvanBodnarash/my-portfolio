@@ -8,7 +8,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="lg:h-screen h-full flex flex-col items-center space-y-8 pt-28"
+      className="h-full flex flex-col items-center space-y-8 pt-28"
       data-aos="fade-up"
     >
       <div

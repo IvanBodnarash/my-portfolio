@@ -98,7 +98,7 @@ export default function Hero() {
             >
               I specialize in building visually appealing and functional
               websites. I love combining creativity with code to craft intuitive
-              user interfaces. Always eager to learn and grow, I’m excited to
+              user interfaces. Always eager to learn and grow, I&apos;m excited to
               bring your ideas to life on the web.
             </p>
           </div>
@@ -116,7 +116,7 @@ export default function Hero() {
               href="#contact"
               className="lg:ml-12 ml-6 lg:text-md md:text-sm text-xs glow-text-static transition-all hover:text-portfolio-color-5"
             >
-              Let's Connect
+              Let&apos;s Connect
             </Link>
           </div>
         </div>

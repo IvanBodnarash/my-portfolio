@@ -14,7 +14,7 @@ const ProjectItem = ({ project }) => {
           <Image
             src={project.image}
             alt={`${project.title} image`}
-            className="object-top object-cover w-full h-full rounded-lg"
+            className="object-center object-cover w-full h-full rounded-lg"
             fill
           />
           <div className="absolute inset-0 bg-portfolio-color-1 border-2 border-transparent bg-opacity-50 rounded-lg transition-all duration-300 ease-in-out hover:bg-opacity-0 hover:border-portfolio-color-5"></div>

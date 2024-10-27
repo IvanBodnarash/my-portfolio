@@ -32,7 +32,7 @@ export default function Contact() {
           data-aos-delay="200"
           className="text-5xl text-portfolio-color-6 font-bold text-center"
         >
-          Let's get in touch!
+          Let&apos;s get in touch!
         </h1>
 
         <div className="flex flex-col justify-center items-center space-y-16">
@@ -42,7 +42,7 @@ export default function Contact() {
             className="text-md text-center text-portfolio-color-6 space-y-6 lg:w-1/2"
           >
             <p>
-              I’m always open to new opportunities and collaborations! Whether
+              I&apos;m always open to new opportunities and collaborations! Whether
               you have a project in mind, need a developer for your team, or
               just want to connect, feel free to reach out.
             </p>
