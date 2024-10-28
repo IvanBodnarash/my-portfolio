@@ -86,7 +86,7 @@ export default function Header() {
 
           <div className="hidden md:block" data-aos="fade-down" data-aos-delay={(menuItems.length + 1) * 100}>
             <a
-              href="static/resume.pdf"
+              href="static/IvanBodnarashCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -119,7 +119,7 @@ export default function Header() {
         className={`top-0 right-0 ${
           isOpenMobileMenu
             ? "h-full transition-all duration-500 ease-in-out"
-            : "translate-x-full h-4"
+            : "translate-x-full h-0"
         } transform transition-transform duration-500 ease-in-out md:hidden z-40`}
       >
         <nav className="flex flex-col space-y-8 p-4 h-full backdrop-blur-lg text-portfolio-color-4 font-light items-center">
@@ -143,7 +143,7 @@ export default function Header() {
           </Link>
           <div className="md:hidden">
             <a
-              href="static/resume.pdf"
+              href="static/IvanBodnarashCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMobileMenu}
