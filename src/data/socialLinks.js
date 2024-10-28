@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     name: "Wellfound",
-    link: "https://wellfound.com/u/ivan-bodnarash",
+    link: "https://wellfound.com/u/ivan-bodnarash-1",
     icon: SiWellfound,
   },
 ];
