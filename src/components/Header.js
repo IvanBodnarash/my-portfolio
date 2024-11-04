@@ -97,7 +97,7 @@ export default function Header() {
           </div>
         </nav>
 
-        <div className="md:hidden">
+        <div className="flex justify-center items-center md:hidden">
           <button
             className="text-portfolio-color-4 focus:outline-none"
             onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
