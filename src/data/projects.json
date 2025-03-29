@@ -10,6 +10,16 @@
     "image": "https://github.com/IvanBodnarash/The-Recipe-Compass-JS/blob/main/public/img/the-recipe-compass-mockup.png?raw=true"
   },
   {
+    "title": "Building Estimator",
+    "description": "Building Price Estimator is a web application that helps users calculate the estimated cost of constructing residential or commercial buildings. It offers a user-friendly interface to input various construction parameters and calculate cost with PDF document generation.",
+    "techStack": ["React", "TailwindCSS", "IndexedDB", "HeadlessUI", "Framer Motion", "MathJS", "JsPDF", "Vite", "Vercel"],
+    "links": {
+      "live": "https://building-estimator-rho.vercel.app",
+      "github": "https://github.com/IvanBodnarash/building-estimator"
+    },
+    "image": "https://github.com/IvanBodnarash/building-estimator/blob/main/public/screenshots/home_page.png?raw=true"
+  },
+  {
     "title": "Buidl & Borrow",
     "description": "A decentralized app (dApp) built on Radix during a hackathon. It uses Scrypto for smart contracts, JavaScript for the frontend, Firebase for data, and Tailwind CSS for styling. The dApp enables users to lend and borrow assets in a decentralized manner, providing a secure and transparent financial ecosystem.",
     "techStack": [
