@@ -86,7 +86,7 @@ export default function Header() {
 
           <div className="hidden md:block" data-aos="fade-down" data-aos-delay={(menuItems.length + 1) * 100}>
             <a
-              href="static/IvanBodnarashCV.pdf"
+              href="static/Ivan_Bodnarash_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -143,7 +143,7 @@ export default function Header() {
           </Link>
           <div className="md:hidden">
             <a
-              href="static/IvanBodnarashCV.pdf"
+              href="static/Ivan_Bodnarash_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMobileMenu}
