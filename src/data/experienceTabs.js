@@ -15,16 +15,16 @@ export const tabContent = {
   ],
   courses: [
     {
+      title: "React - The Complete Guide (Udemy)",
+      date: "Dec 2024 - Apr 2025",
+      description:
+        "Successfully completed the course React - The Complete Guide 2025 (incl. Next.js, Redux). Gained valuable knowledge through a rich, insightful, and well-structured course.",
+    },
+    {
       title: "Scrypto 101 - Raddix Academy",
       date: "Jun 2024 - Aug 2024",
       description:
         "I began exploring blockchain technologies and took a basic course in a Rust-based language designed for smart contract development.",
-    },
-    {
-      title: "React - The Complete Guide (Udemy)",
-      date: "Jan 2024 - Present",
-      description:
-        "Started course on React.js, Hooks, Redux, React Router, Next.js, Best Practices. I still learning React, but I am very comfortable with it.",
     },
     {
       title: "Flutter & Dart - The Complete Guide (Udemy)",
@@ -56,13 +56,13 @@ export const tabContent = {
       title: "Kaleidoscope",
       date: "Feb 2024",
       description:
-      "Contributed as a Frontend Developer Volunteer at Kaleidoscope, collaborating with the team to enhance website functionality and user experience. Focused on enhancing UI/UX to increase user engagement and satisfaction. Ensured crossbrowser compatibility and optimized performance for large data sets.",
+        "Contributed as a Frontend Developer Volunteer at Kaleidoscope, collaborating with the team to enhance website functionality and user experience. Focused on enhancing UI/UX to increase user engagement and satisfaction. Ensured crossbrowser compatibility and optimized performance for large data sets.",
     },
     {
       title: "The Dollar Detectives",
       date: "Jan 2024",
       description:
-      "I worked on revising the website for The Dollar Detectives. Applied PHP, HTML, CSS, and JavaScript to create visually appealing and user-friendly features.",
+        "I worked on revising the website for The Dollar Detectives. Applied PHP, HTML, CSS, and JavaScript to create visually appealing and user-friendly features.",
     },
   ],
   events: [
@@ -70,7 +70,7 @@ export const tabContent = {
       title: "EBC10 European Blockchain Convention - Hackathon (Barcelona)",
       date: "Sep 2024",
       description:
-      "I contributed to building a loan and collateral application on Radix Scrypto, focusing on smart contract logic, frontend development, and backend integration.",
+        "I contributed to building a loan and collateral application on Radix Scrypto, focusing on smart contract logic, frontend development, and backend integration.",
     },
     {
       title: "YYC Hacks - Hackathon (Calgary)",
