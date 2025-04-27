@@ -19,6 +19,7 @@ export const tabContent = {
       date: "Dec 2024 - Apr 2025",
       description:
         "Successfully completed the course React - The Complete Guide 2025 (incl. Next.js, Redux). Gained valuable knowledge through a rich, insightful, and well-structured course.",
+      link: "https://www.udemy.com/certificate/UC-8b080910-fac7-48ff-96b2-40a8cd78885e/",
     },
     {
       title: "Scrypto 101 - Raddix Academy",

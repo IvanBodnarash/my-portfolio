@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { tabContent, tabs } from "@/data/experienceTabs";
+import Link from "next/link";
 
 export default function Experience() {
   const [activeTab, setActiveTab] = useState("education");
@@ -59,8 +60,12 @@ export default function Experience() {
           >
             {tabContent[activeTab].map((item, index) => (
               <div key={index} className="space-y-6">
-                <h2 className="text-xl font-bold md:w-2/4 w-full">
-                  {item.title}
+                <h2 className="text-xl font-bold md:w-2/4 w-full cursor-pointer">
+                  {item.link ? (
+                    <Link href={item.link} target="_blank">{item.title}</Link>
+                  ) : (
+                    item.title
+                  )}
                 </h2>
                 <p className="mt-2 text-portfolio-color-6 italic">
                   {item.date}
