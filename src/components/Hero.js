@@ -121,7 +121,7 @@ export default function Hero() {
           </div>
         </div>
         <div
-          className={`hidden lg:block flex items-center justify-center transition-opacity duration-700 ${
+          className={`hidden lg:block items-center justify-center transition-opacity duration-700 ${
             showElements.doodle ? "opacity-100" : "opacity-0"
           }`}
         >

@@ -6,11 +6,14 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiFlutter,
+  SiNodedotjs,
+  SiExpress,
   SiPhp,
-  SiSolidity,
+  SiSequelize,
+  SiFlutter,
   SiGithub,
   SiTailwindcss,
   SiFirebase,
@@ -18,18 +21,25 @@ import {
   SiBootstrap,
   SiVercel,
   SiVite,
+  SiSanity,
   SiWordpress,
+  SiSolidity,
 } from "react-icons/si";
-
+import { VscAzure } from "react-icons/vsc";
 
 const skills = [
   { name: "HTML5", icon: SiHtml5 },
   { name: "CSS3", icon: SiCss3 },
-  { name: "Javascript", icon: SiJavascript },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
-  { name: "Flutter", icon: SiFlutter },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Express.js", icon: SiExpress },
   { name: "PHP", icon: SiPhp },
+  { name: "Azure", icon: VscAzure },
+  { name: "Sequelize", icon: SiSequelize },
+  { name: "Flutter", icon: SiFlutter },
   { name: "Solidity", icon: SiSolidity },
   { name: "GitHub", icon: SiGithub },
   { name: "TailwindCSS", icon: SiTailwindcss },
@@ -37,16 +47,23 @@ const skills = [
   { name: "Bootstrap", icon: SiBootstrap },
   { name: "Vercel", icon: SiVercel },
   { name: "Vite", icon: SiVite },
+  { name: "Sanity CMS", icon: SiSanity },
   { name: "Wordpress", icon: SiWordpress },
   { name: "Heroku", icon: SiHeroku },
 ];
 
 const SkillItem = ({ Icon, name, delay }) => (
-  <div data-aos="fade-up" data-aos-delay={delay} className="flex flex-col items-center">
+  <div
+    data-aos="fade-up"
+    data-aos-delay={delay}
+    className="flex flex-col items-center"
+  >
     <div className="lg:h-28 lg:w-28 md:h-24 md:w-24 sm:h-20 sm:w-20 p-4 border-2 border-portfolio-color-4 border-opacity-50 rounded-lg hover:cursor-pointer button-shadow transition-all duration-300 ease-in-out">
       <Icon className="lg:text-7xl md:text-6xl text-5xl text-portfolio-color-4" />
     </div>
-    <h3 className="text-md font-mono text-center mt-2 text-portfolio-color-4">{name}</h3>
+    <h3 className="text-md font-mono text-center mt-2 text-portfolio-color-4">
+      {name}
+    </h3>
   </div>
 );
 
@@ -60,7 +77,11 @@ export default function Skills() {
   }, []);
 
   return (
-    <div data-aos="fade-up" id="skills" className="lg:h-screen h-full flex items-center">
+    <div
+      data-aos="fade-up"
+      id="skills"
+      className="lg:h-screen h-full flex items-center"
+    >
       <div className="space-y-8 lg:mt-0 mt-32">
         <div className="flex flex-row items-center space-x-6 lg:w-3/5 w-full">
           <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">
@@ -80,7 +101,12 @@ export default function Skills() {
 
         <div className="grid xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-6 sm:grid-cols-4 grid-cols-3 md:gap-8 gap-2">
           {skills.map((skill, index) => (
-            <SkillItem key={index} Icon={skill.icon} name={skill.name} delay={index * 100} />
+            <SkillItem
+              key={index}
+              Icon={skill.icon}
+              name={skill.name}
+              delay={index * 100}
+            />
           ))}
         </div>
       </div>

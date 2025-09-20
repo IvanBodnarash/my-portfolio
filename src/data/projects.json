@@ -1,5 +1,15 @@
 [
   {
+    "title": "Kazkovyi Dim",
+    "description": "A website for a children's party agency with dynamic content, built using Next.js, Tailwind CSS, and Sanity CMS. It allows visitors to browse services, photos and information about entertainers. Includes an admin panel for content editing after authorization.",
+    "techStack": ["JS", "Next.js", "Tailwind CSS", "Sanity CMS"],
+    "links": {
+      "live": "https://kazkovyi-dim.vercel.app",
+      "github": "https://github.com/IvanBodnarash/kazkovyi-dim"
+    },
+    "image": "https://github.com/IvanBodnarash/kazkovyi-dim/blob/main/kazkovyi-dim-app/public/og-image.jpg?raw=true"
+  },
+  {
     "title": "The Recipe Compass",
     "description": "A recipe management system built using HTML, CSS, JavaScript, Firebase for the backend, and the Unsplash API for image integration. The app allows users to post their own recipes, comment on other users recipes, and create personal accounts.",
     "techStack": ["HTML", "CSS", "JS", "Firebase", "Unsplash API"],

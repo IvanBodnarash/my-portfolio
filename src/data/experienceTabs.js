@@ -1,6 +1,12 @@
 export const tabContent = {
   education: [
     {
+      title: "Full-Stack Web Development Bootcamp – Fundación Esplai",
+      date: "May 2025 - Sept 2025",
+      description:
+        "Completed an intensive full-stack development bootcamp focused on JavaScript, React, Node.js, Express.js, Sequelize, MySQL, and Azure. Built real-world project in a collaborative, agile environment while strengthening both frontend and backend skills.",
+    },
+    {
       title: "Bachelor’s Degree in Building and Civil Engineering",
       date: "Sept 2018 - Feb 2021",
       description:

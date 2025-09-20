@@ -4,6 +4,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import myPhoto from "@/img/MyPhoto.png";
+
 const ListItem = ({ skill }) => (
   <li className="relative pl-4 before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-0 before:h-0 before:border-l-[5px] before:border-t-[5px] before:border-b-[5px] before:border-solid before:border-l-portfolio-color-6 before:border-t-transparent before:border-b-transparent">
     {skill}
@@ -56,7 +57,7 @@ export default function About() {
             </p>
             <p>
               Currently, my primary goal is to enhance my skills and deliver
-              comfortable, accessible web solutions as a freelancer. I&apos;m always
+              comfortable, accessible web solutions as a frontend developer. I&apos;m always
               learning and growing, striving to become a more experienced web
               developer every day.
             </p>
@@ -67,12 +68,21 @@ export default function About() {
                 <ListItem skill="React" />
                 <ListItem skill="Next.js" />
                 <ListItem skill="Tailwind" />
+                <ListItem skill="Bootstrap" />
               </ul>
               <ul>
-                <ListItem skill="Flutter" />
-                <ListItem skill="Scrypto" />
-                <ListItem skill="Wordpress" />
+                <ListItem skill="Node.js" />
+                <ListItem skill="Express.js" />
+                <ListItem skill="Sequelize" />
+                <ListItem skill="MySQL" />
                 <ListItem skill="Firebase" />
+              </ul>
+              <ul>
+                <ListItem skill="Azure" />
+                <ListItem skill="Vite" />
+                <ListItem skill="Vercel" />
+                <ListItem skill="Render" />
+                <ListItem skill="Git/GitHub" />
               </ul>
             </div>
           </div>
