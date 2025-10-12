@@ -1,5 +1,30 @@
 [
   {
+    "title": "QueTocaHoy",
+    "description": "A collaborative full stack web app that helps families and groups stay organized with daily tasks, recipes, and shopping lists. Built from scratch, starting locally with MySQL, later migrated to PostgreSQL, deployed on Render and Vercel",
+    "techStack": [
+      "React",
+      "TailwindCSS",
+      "Node",
+      "Express",
+      "PostgresSQL",
+      "MySQL",
+      "Sequelize",
+      "Socket.IO",
+      "Vite",
+      "Firebase",
+      "JWT",
+      "Neon.tech",
+      "Vercel",
+      "Render"
+    ],
+    "links": {
+      "live": "https://que-toca-hoy.vercel.app",
+      "github": "https://github.com/IvanBodnarash/que-toca-hoy"
+    },
+    "image": "https://github.com/IvanBodnarash/que-toca-hoy/blob/main/frontend/public/welcome-page.png?raw=true"
+  },
+  {
     "title": "Kazkovyi Dim",
     "description": "A website for a children's party agency with dynamic content, built using Next.js, Tailwind CSS, and Sanity CMS. It allows visitors to browse services, photos and information about entertainers. Includes an admin panel for content editing after authorization.",
     "techStack": ["JS", "Next.js", "Tailwind CSS", "Sanity CMS"],
