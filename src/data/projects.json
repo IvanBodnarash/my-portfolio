@@ -21,7 +21,7 @@
     "links": {
       "live": "https://dashboard.compactif.ai/"
     },
-    "image": ""
+    "image": "https://github.com/IvanBodnarash/my-portfolio/blob/main/src/img/compactifai.png?raw=true"
   },
   {
     "title": "Biyo POS",
@@ -30,7 +30,7 @@
     "links": {
       "live": "https://biyopos.com/"
     },
-    "image": ""
+    "image": "https://github.com/IvanBodnarash/my-portfolio/blob/main/src/img/biyo.png?raw=true"
   },
   {
     "title": "P.Slate",
@@ -47,10 +47,9 @@
       "Vercel"
     ],
     "links": {
-      "live": "https://www.pslate.app/en",
-      "github": ""
+      "live": "https://www.pslate.app/en"
     },
-    "image": ""
+    "image": "https://github.com/IvanBodnarash/my-portfolio/blob/main/src/img/p-slate.png?raw=true"
   },
   {
     "title": "QueTocaHoy",

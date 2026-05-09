@@ -10,11 +10,12 @@ const ProjectItem = ({ project }) => {
         id="appScreen"
         className="button-shadow relative cursor-pointer transition-all duration-300 ease-in-out bg-portfolio-color-4 lg:w-3/6 md:w-3/5 sm:w-4/5 w-full lg:h-[250px] h-[180px] rounded-lg"
       >
-        <Link href={project.links.live} target="_blank">
+        <Link href={project.links.live} target="_blank" className="relative block w-full h-full">
           <Image
             src={project.image}
+            sizes="(max-width: 768px) 100vw, 500px"
             alt={`${project.title} image`}
-            className="object-center object-cover w-full h-full rounded-lg"
+            className="object-center object-cover rounded-lg"
             fill
           />
           <div className="absolute inset-0 bg-portfolio-color-1 border-2 border-transparent bg-opacity-50 rounded-lg transition-all duration-300 ease-in-out hover:bg-opacity-0 hover:border-portfolio-color-5"></div>

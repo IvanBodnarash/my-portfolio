@@ -56,8 +56,9 @@ export default function About() {
           >
             <Image
               src={myPhoto}
+              sizes="(max-width: 768px) 100vw, 500px"
               alt="My photo"
-              className="object-center object-cover w-full h-full rounded-lg"
+              className="object-center object-cover rounded-lg"
               fill
             />
             <div className="absolute inset-0 bg-portfolio-color-1 border-2 border-transparent bg-opacity-40 rounded-lg transition-all duration-300 ease-in-out hover:bg-opacity-0 hover:border-portfolio-color-5"></div>
