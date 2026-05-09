@@ -1,5 +1,58 @@
 [
   {
+    "title": "CompactifAI Dashboard",
+    "description": "A customer-facing dashboard developed as part of an international software engineering team at Multiverse Computing. Contributed to front-end features, dashboard interfaces, billing and usage-related UI, design system components, bug fixing, testing, code reviews, and collaboration with QA testers, backend engineers, product managers, and designers.",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "MUI",
+      "TanStack Query",
+      "Axios",
+      "SCSS",
+      "i18next",
+      "Docker",
+      "Vitest",
+      "Testing Library",
+      "Storybook",
+      "GitLab",
+      "Clerk"
+    ],
+    "links": {
+      "live": "https://dashboard.compactif.ai/"
+    },
+    "image": ""
+  },
+  {
+    "title": "Biyo POS",
+    "description": "A commercial website for an all-in-one POS platform focused on restaurants, retail, online ordering, inventory management, kiosk mode, reporting, and business operations. Worked on front-end implementation and UI improvements for a real business website, focusing on clean page structure, reusable sections, and production-ready delivery.",
+    "techStack": ["React", "Next.js", "JavaScript", "Python", "TailwindCSS", "Flutter", "Docker", "Bitbucket"],
+    "links": {
+      "live": "https://biyopos.com/"
+    },
+    "image": ""
+  },
+  {
+    "title": "P.Slate",
+    "description": "A front-end scheduling planner designed for Prince Sultan University students. The app helps students search courses, select sections, generate conflict-free schedules, compare weekly timetable options, copy section numbers for registration, and estimate tuition costs. Built as a fully functional front-end product with bilingual English and Arabic support.",
+    "techStack": [
+      "React",
+      "Vite",
+      "JavaScript",
+      "TailwindCSS",
+      "Zustand",
+      "i18next",
+      "React Router",
+      "Vitest",
+      "Vercel"
+    ],
+    "links": {
+      "live": "https://www.pslate.app/en",
+      "github": ""
+    },
+    "image": ""
+  },
+  {
     "title": "QueTocaHoy",
     "description": "A collaborative full stack web app that helps families and groups stay organized with daily tasks, recipes, and shopping lists. Built from scratch, starting locally with MySQL, later migrated to PostgreSQL, deployed on Render and Vercel",
     "techStack": [
@@ -7,7 +60,7 @@
       "TailwindCSS",
       "Node.js",
       "Express",
-      "PostgresSQL",
+      "PostgreSQL",
       "MySQL",
       "Sequelize",
       "Socket.IO",
@@ -67,16 +120,7 @@
   {
     "title": "Buidl & Borrow",
     "description": "A decentralized app (dApp) built on Radix during a hackathon. It uses Scrypto for smart contracts, JavaScript for the frontend, Firebase for data, and Tailwind CSS for styling. The dApp enables users to lend and borrow assets in a decentralized manner, providing a secure and transparent financial ecosystem.",
-    "techStack": [
-      "HTML",
-      "CSS",
-      "JS",
-      "Scrypto",
-      "Tailwind",
-      "Vercel",
-      "Vite",
-      "Firebase"
-    ],
+    "techStack": ["HTML", "CSS", "JS", "Scrypto", "Tailwind", "Vercel", "Vite", "Firebase"],
     "links": {
       "live": "https://buidl-n-borrow-dapp.vercel.app",
       "github": "https://github.com/IvanBodnarash/buidl-n-borrow-dapp"

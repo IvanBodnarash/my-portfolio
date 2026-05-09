@@ -1,0 +1,21 @@
+export const skills = [
+  "React",
+  "Next.js",
+  "JavaScript",
+  "TypeScript",
+  "TailwindCSS",
+  "Firebase",
+  "Bootstrap",
+  "Python",
+  "Node.js",
+  "Express.js",
+  "Sequelize",
+  "MySQL",
+  "Azure",
+  "Vite",
+  "Vercel",
+  "Render",
+  "GitHub",
+  "GitLab",
+  "BitBucket"
+];

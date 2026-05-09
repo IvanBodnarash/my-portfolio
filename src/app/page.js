@@ -1,14 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Socials from "@/components/Socials";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Header from "@/components/Header/Header";
+import Hero from "@/components/Hero/Hero";
+import Socials from "@/components/Socials/Socials";
+import About from "@/components/About/About";
+import Projects from "@/components/Projects/Projects";
+import Skills from "@/components/Skills/Skills";
+import Experience from "@/components/Experience/Experience";
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
