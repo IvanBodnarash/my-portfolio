@@ -9,7 +9,7 @@ export default function Experience() {
   const tabContent = parseExperienceData(activeTab);
 
   return (
-    <div id="experience" className="flex flex-col items-center space-y-8 pt-14" data-aos="fade-up">
+    <div id="experience" className="flex flex-col items-center space-y-8 pt-28" data-aos="fade-up">
       <div data-aos="fade-up" data-aos-delay="100" className="flex flex-row items-center space-x-6 w-full">
         <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">Experience</h1>
         <div className="h-[1px] lg:w-4/6 md:w-2/5 w-1/2 bg-portfolio-color-4"></div>
@@ -39,7 +39,7 @@ export default function Experience() {
             ))}
           </div>
 
-          <div data-aos="fade-up" data-aos-delay="300" className="lg:w-2/3 w-6/7 space-y-8 h-[500px] overflow-auto scrollbar">
+          <div data-aos="fade-up" data-aos-delay="300" className="lg:w-2/3 w-6/7 space-y-8 h-[600px] overflow-auto scrollbar">
             {tabContent[0].map((item, index) => (
               <div key={index} className="space-y-4">
                 <h2 className="text-xl font-bold md:w-2/4 w-full cursor-pointer">
