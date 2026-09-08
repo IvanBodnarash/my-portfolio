@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { RiExternalLinkLine } from "react-icons/ri";
 import { parseExperienceData, parseExperienceKeys } from "@/utils/experienceTabs";
 
 export default function Experience() {
@@ -39,13 +40,18 @@ export default function Experience() {
             ))}
           </div>
 
-          <div data-aos="fade-up" data-aos-delay="300" className="lg:w-2/3 w-6/7 space-y-8 h-[600px] overflow-auto scrollbar">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="w-6/7 space-y-8 h-[500px] overflow-auto scrollbar"
+          >
             {tabContent[0].map((item, index) => (
               <div key={index} className="space-y-4">
-                <h2 className="text-xl font-bold md:w-2/4 w-full cursor-pointer">
+                <h2 className="text-xl font-bold md:w-2/4 w-full">
                   {item.link ? (
-                    <Link href={item.link} target="_blank">
-                      {item.title}
+                    <Link className="flex flex-row gap-2 items-center w-full cursor-pointer hover:underline underline-offset-4" href={item.link} target="_blank">
+                      <span className="w-full">{item.title}</span>
+                      <RiExternalLinkLine size={24} className="shrink-0" />
                     </Link>
                   ) : (
                     item.title

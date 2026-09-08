@@ -31,6 +31,18 @@
     ],
     "courses": [
       {
+        "title": "Relational Databases Certification (freeCodeCamp)",
+        "date": "Aug 2026",
+        "description": "Completed a project-based certification focused on SQL, PostgreSQL, relational database design, Bash scripting, and Git. Built practical terminal-based projects while working with database queries, tables, constraints, relationships, and data manipulation.",
+        "link": "https://www.freecodecamp.org/certification/ivan_bdnr/relational-databases-v9"
+      },
+      {
+        "title": "Claude 101, Claude Code 101 & Claude Platform 101 (Anthropic Academy)",
+        "date": "Aug 2026",
+        "description": "Completed three introductory Anthropic Academy courses covering Claude usage, AI-assisted coding workflows with Claude Code, and the basics of building with the Claude platform.",
+        "link": ""
+      },
+      {
         "title": "React - The Complete Guide (Udemy)",
         "date": "Dec 2024 - Apr 2025",
         "description": "Successfully completed the course React - The Complete Guide 2025 (incl. Next.js, Redux). Gained valuable knowledge through a rich, insightful, and well-structured course.",
@@ -44,7 +56,8 @@
       {
         "title": "Flutter & Dart - The Complete Guide (Udemy)",
         "date": "Jul 2023 - Sep 2023",
-        "description": "Tried new technologies like Flutter, Dart, and Firebase. Nice experience where I learned new things."
+        "description": "Tried new technologies like Flutter, Dart, and Firebase. Nice experience where I learned new things.",
+        "link": "https://www.udemy.com/certificate/UC-c83db256-f330-4c5a-b052-519ed0740a96/"
       },
       {
         "title": "PHP and MySQL – Calgary Public Library",

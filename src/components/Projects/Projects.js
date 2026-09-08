@@ -82,7 +82,7 @@ export default function Projects() {
           ) : (
             <button
               onClick={toggleShowAll}
-              className="button-shadow glow-text-static lg:text-md md:text-sm text-xs lg:px-14 md:px-8 px-4 md:py-[0.6rem] py-2 border-[1.2px] border-portfolio-color-4 rounded-md"
+              className="button-shadow glow-text-static lg:text-md md:text-sm text-xs lg:px-14 md:px-8 px-4 md:py-[0.6rem] py-2 border-[1.2px] border-portfolio-color-4 rounded-md transition-all"
             >
               Load More
             </button>

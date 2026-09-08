@@ -71,17 +71,16 @@ export default function Hero() {
                 showElements.role ? "opacity-100" : "opacity-0"
               }`}
             >
-              Frontend Developer.
+              Software Engineer.
             </h1>
             <p
               className={`lg:text-md text-sm text-portfolio-color-6 transition-opacity duration-700 ${
                 showElements.description ? "opacity-80" : "opacity-0"
               }`}
             >
-              I specialize in building visually appealing and functional websites that bring ideas to life on the web. I
-              enjoy combining creativity with code to craft clean, intuitive interfaces and practical digital
-              experiences. Always eager to learn and improve, I&apos;m focused on building solutions that look good, work
-              well, and deliver real value.
+              I specialize in building practical, reliable, and visually polished digital products that bring ideas to
+              life on the web. I enjoy combining creativity with engineering to create clear interfaces, reusable
+              components, and solutions that are easy to use, maintain, and improve.
             </p>
           </div>
           <div className={`transition-opacity duration-700 ${showElements.buttons ? "opacity-100" : "opacity-0"}`}>
