@@ -17,5 +17,6 @@ export const skills = [
   "Render",
   "GitHub",
   "GitLab",
-  "BitBucket"
+  "BitBucket",
+  "CloudFlare"
 ];

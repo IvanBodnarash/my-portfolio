@@ -26,22 +26,27 @@ export default function About() {
             className="lg:text-md text-sm text-portfolio-color-6 space-y-6 lg:w-full"
           >
             <p>
-              Hello! My name is Ivan, and I&apos;m a frontend developer who enjoys turning ideas, designs, and product
-              requirements into real working interfaces. I started my web development journey in 2022, first
-              experimenting with website builders and later moving into building web applications from scratch.
+              Hello! My name is Ivan, and I&apos;m a Software Engineer with a strong focus on frontend development. I
+              enjoy turning ideas, designs, and product requirements into real working interfaces and features.
             </p>
 
             <p>
-              Since then, I&apos;ve gained experience across freelance projects, personal products, hackathons, and
-              production work in an international software engineering team. I&apos;ve contributed to client websites,
-              full-stack features, dashboard interfaces, design system components, authentication flows, CRUD
-              functionality, API integrations, and deployment workflows.
+              I started my web development journey in 2022, first experimenting with website builders and later moving
+              into building web applications from scratch. Since then, I&apos;ve gained experience across freelance
+              projects, personal products, hackathons, full-stack applications, and production work in an international
+              software engineering team.
             </p>
 
             <p>
-              I&apos;m especially interested in building clear UI logic, reusable components, and frontend structures
-              that are easy to maintain and improve. Right now, I&apos;m focused on contributing to products where
-              thoughtful implementation, clean structure, and practical problem-solving really matter.
+              I&apos;ve contributed to client websites, dashboard interfaces, design system components, authentication
+              flows, CRUD functionality, API integrations, testing, and deployment workflows. I&apos;m especially
+              interested in clear UI logic, reusable components, maintainable code, and understanding how frontend work
+              connects with backend services and product requirements.
+            </p>
+
+            <p>
+              Right now, I&apos;m focused on contributing to products where thoughtful implementation, clean structure,
+              and practical problem-solving really matter.
             </p>
 
             <p>Here are a few technologies I&apos;ve been working with recently:</p>
