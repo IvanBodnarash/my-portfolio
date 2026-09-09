@@ -1,6 +1,5 @@
 "use client";
-import { useEffect } from "react";
-import Aos from "aos";
+import { useEffect, useRef, useState } from "react";
 import "aos/dist/aos.css";
 import {
   SiHtml5,
@@ -40,6 +39,7 @@ import {
 } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 import { GrHeroku } from "react-icons/gr";
+import SkillItem from "./SkillItem";
 
 const skills = [
   { name: "JavaScript", icon: SiJavascript },
@@ -80,41 +80,46 @@ const skills = [
   { name: "Cursor", icon: SiCursor },
 ];
 
-const SkillItem = ({ Icon, name, delay }) => (
-  <div data-aos="fade-up" data-aos-delay={delay} className="flex flex-col items-center">
-    <div className="lg:size-18 md:size-16 sm:size-14 p-2 border-2 border-portfolio-color-4 flex justify-center items-center border-opacity-50 rounded-lg hover:cursor-pointer button-shadow transition-all duration-300 ease-in-out">
-      <Icon className="lg:text-4xl md:text-2xl text-xl text-portfolio-color-4" />
-    </div>
-    <h3 className="md:text-md text-sm font-mono text-center mt-2 text-portfolio-color-4">{name}</h3>
-  </div>
-);
-
 export default function Skills() {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    Aos.init({
-      duration: 300,
-      easing: "ease-in-out",
-      once: true,
-    });
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(section);
+        }
+      },
+      {
+        threshold: 0.2,
+      },
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div data-aos="fade-up" id="skills" className="lg:h-screen h-full flex items-center">
+    <div ref={sectionRef} id="skills" className="lg:h-screen h-full flex items-center">
       <div className="space-y-4 lg:mt-0 mt-32">
         <div className="flex flex-row items-center space-x-6 lg:w-3/5 w-full">
           <h1 className="lg:text-3xl text-2xl text-portfolio-color-4 font-semibold">Skills</h1>
           <div className="h-[1px] lg:w-[60%] w-[50%] bg-portfolio-color-4"></div>
         </div>
 
-        <div className="">
-          <div className="lg:text-md text-sm text-portfolio-color-6 space-y-4 lg:w-full">
-            <p>Here are the technologies and tools I have worked with or had the opportunity to explore</p>
-          </div>
+        <div className="lg:text-md text-sm text-portfolio-color-6 space-y-4 lg:w-full">
+          <p>Here are the technologies and tools I have worked with or had the opportunity to explore</p>
         </div>
 
-        <div className="grid xl:grid-cols-10 lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-4 grid-cols-3 md:gap-6 gap-2">
+        <div className="grid xl:grid-cols-10 lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-4 grid-cols-3 md:gap-6 gap-2 transition-all transform-cpu">
           {skills.map((skill, index) => (
-            <SkillItem key={index} Icon={skill.icon} name={skill.name} delay={index * 100} />
+            <SkillItem key={skill.name} Icon={skill.icon} name={skill.name} index={index} isVisible={isVisible} />
           ))}
         </div>
       </div>
